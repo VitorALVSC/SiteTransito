@@ -275,6 +275,10 @@ main {
     display: none;
 }
 
+.transito-mundial {
+    display: none;
+}
+
 .recomendacoes-no-transito {
     display: none;
 }

@@ -10,6 +10,9 @@ const TransitoPatoBranco = document.querySelector('.transito-pato-branco')
 const OpcaoTransitoBrasileiro = document.querySelector('#opcaoTransitoBrasileiro')
 const TransitoBrasileiro = document.querySelector('.transito-brasileiro')
 
+const OpcaoTransitoMundial = document.querySelector('#opcaoTransitoMundial')
+const TransitoMundial = document.querySelector('.transito-mundial')
+
 const OpcaoRecomendacoesTransito = document.querySelector('#opcaoRecomendacoesTransito')
 const RecomendacoesNoTransito = document.querySelector('.recomendacoes-no-transito')
 
@@ -25,6 +28,7 @@ OpcaoPaginaInicial.addEventListener('click', () => {
     PaginaInicial.setAttribute('style', 'display:flex')
     TransitoPatoBranco.setAttribute('style', 'display:none')
     TransitoBrasileiro.setAttribute('style', 'display:none')
+    TransitoMundial.setAttribute('style', 'display:none')
     RecomendacoesNoTransito.setAttribute('style', 'display:none')
 })
 
@@ -32,6 +36,7 @@ OpcaoTransitoPatoBranco.addEventListener('click', () => {
     PaginaInicial.setAttribute('style', 'display:none')
     TransitoPatoBranco.setAttribute('style', 'display:flex')
     TransitoBrasileiro.setAttribute('style', 'display:none')
+    TransitoMundial.setAttribute('style', 'display:none')
     RecomendacoesNoTransito.setAttribute('style', 'display:none')
 })
 
@@ -39,6 +44,15 @@ OpcaoTransitoBrasileiro.addEventListener('click', () => {
     PaginaInicial.setAttribute('style', 'display:none')
     TransitoPatoBranco.setAttribute('style', 'display:none')
     TransitoBrasileiro.setAttribute('style', 'display:flex')
+    TransitoMundial.setAttribute('style', 'display:none')
+    RecomendacoesNoTransito.setAttribute('style', 'display:none')
+})
+
+OpcaoTransitoMundial.addEventListener('click', () => {
+    PaginaInicial.setAttribute('style', 'display:none')
+    TransitoPatoBranco.setAttribute('style', 'display:none')
+    TransitoBrasileiro.setAttribute('style', 'display:none')
+    TransitoMundial.setAttribute('style', 'display:flex')
     RecomendacoesNoTransito.setAttribute('style', 'display:none')
 })
 
@@ -46,6 +60,7 @@ OpcaoRecomendacoesTransito.addEventListener('click', () => {
     PaginaInicial.setAttribute('style', 'display:none')
     TransitoPatoBranco.setAttribute('style', 'display:none')
     TransitoBrasileiro.setAttribute('style', 'display:none')
+    TransitoMundial.setAttribute('style', 'display:none')
     RecomendacoesNoTransito.setAttribute('style', 'display:flex')
 })
 
