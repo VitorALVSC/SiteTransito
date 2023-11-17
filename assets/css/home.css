@@ -1,0 +1,279 @@
+body {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    scroll-behavior: smooth;
+    min-width: 320px;
+}
+
+/* Posicionamento e estilização do menu principal*/
+.cabecalho {
+    justify-content: space-between;
+    display: flex;
+    min-width: 280px;
+    align-items: center;
+    background-color: rgb(28, 160, 167);
+    padding: 8px 0;
+}
+
+/* Estilização do icone do menu lateral */
+.icone-menu-lateral {
+    display: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+/* Logo do menu principal */
+.logo-menu {
+    width: 85px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin: 0px 0px 0px 10px;
+}
+
+
+/* Posicionamento das opções do menu principal*/
+.menu-lateral {
+    background-color: transparent;
+    border-bottom-right-radius: 20px;
+    flex-direction: row;
+    transition: .5s;
+    border: none;
+    box-shadow: none;
+    left: 180px;
+    top: 10px;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    transition: .5s;
+    padding: 3px;
+}
+
+/* Estilização das opções do menu*/
+.opcoes-menu {
+    font-family: 'Sarala', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    height: 20px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+/* Estilização ao passar o mouse nas opções do menu*/
+.opcoes-menu:hover {
+    background-color: #103D4A;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
+
+.icones {
+    margin-left: 5px;
+}
+
+/* Ajuste para posicionar o rodapé*/
+main {
+    min-height: calc(100vh - 40px);
+    padding-bottom: 40px;
+    overflow: auto;
+    background-color: #feffd0;
+}
+
+/*Posicionamento e estilização do botão voltar ao topo*/
+#btnTop {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(75, 21, 21, 0.397);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Estilização da seta*/
+.seta {
+    border: solid rgb(214, 16, 16);
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+/* Posicionamento da seta*/
+.acima {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+/* Posicionamento do grid central de informações*/
+.grid-central-info {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto-info {
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    color: rgb(160, 7, 7);
+}
+
+/* Posicionamento e estilização do grid de informações*/
+.grids-info-inicial {
+    padding: 5px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Posicionamento e estilização do grid dos textos*/
+.grid-info-tex-inicial {
+    background-color: rgb(28, 160, 167);
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Posicionamento e estilização do grid de informações*/
+.grids-info {
+    padding: 5px;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Posicionamento e estilização do grid dos textos*/
+.grid-info-tex {
+    background-color: rgb(28, 160, 167);
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Posicionamento e estilização do rodapé*/
+.posicao-rodape {
+    padding-top: 20px;
+    background-color: rgb(28, 160, 167);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Posicionamento das opções do rodapé*/
+.rodape {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Posicionamento do copyright do rodapé*/
+.info-copyright {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilização das opções do rodapé*/
+.textos-footer{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1080px) {   
+
+    /* Estilização do icone do menu lateral */
+    .icone-menu-lateral {
+        display: flex;
+    }
+
+    /* Posicionamento das opções do menu principal para responsividade*/
+    .menu-lateral {
+        background-color: #dbf7fa;
+        flex-direction: column;
+        min-width: 240px;
+        max-width: 240px;
+        left: -100vw;
+        box-shadow: 10px 10px 34px rgba(0, 0, 0, 0.95);
+        top: 50px;
+    }
+
+    /* Estilização das opções do menu para responsividade*/
+    .opcoes-menu {
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+    }
+
+    /* Posicionamento do menu-lateral ao clicar no icone do menu lateral no menu principal*/
+    .menu-lateral-click {
+        left: 0;
+        transition: 1s;
+    }
+
+    /* Posicionamento e estilização do grid de informações para mobile*/
+    .grids-info {
+        width: 80%;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Posicionamento e estilização do grid dos textos para mobile*/
+    .grid-info-tex {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.pagina-inicial {
+    display: flex;
+}
+
+.transito-pato-branco {
+    display: none;
+}
+
+.transito-brasileiro {
+    display: none;
+}
+
+.transito-mundial {
+    display: none;
+}
+
+.recomendacoes-no-transito {
+    display: none;
+}
